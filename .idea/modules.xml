@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DiscoveryClient/DiscoveryClient.iml" filepath="$PROJECT_DIR$/DiscoveryClient/DiscoveryClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DiscoveryClient2/DiscoveryClient2.iml" filepath="$PROJECT_DIR$/DiscoveryClient2/DiscoveryClient2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EurekaServer/EurekaServer.iml" filepath="$PROJECT_DIR$/EurekaServer/EurekaServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/auth_service/auth_service.iml" filepath="$PROJECT_DIR$/auth_service/auth_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/microservice-module.iml" filepath="$PROJECT_DIR$/.idea/microservice-module.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,576 @@
+[24-05-29 17:50:35] [34m[INFO ][0;39m [36m[AuthServiceApplication:55][0;39m Starting AuthServiceApplication using Java 17.0.8 on RB099-PC with PID 15684 (C:\Workspace\Test Lib\microservice-module\auth_service\target\classes started by RB099 in C:\Workspace\Test Lib\microservice-module)
+[24-05-29 17:50:35] [39m[DEBUG][0;39m [36m[AuthServiceApplication:56][0;39m Running with Spring Boot v2.7.15, Spring v5.3.29
+[24-05-29 17:50:35] [34m[INFO ][0;39m [36m[AuthServiceApplication:631][0;39m No active profile set, falling back to 1 default profile: "default"
+[24-05-29 17:50:37] [34m[INFO ][0;39m [36m[RepositoryConfigurationDelegate:262][0;39m Multiple Spring Data modules found, entering strict repository configuration mode
+[24-05-29 17:50:37] [34m[INFO ][0;39m [36m[RepositoryConfigurationDelegate:132][0;39m Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+[24-05-29 17:50:37] [34m[INFO ][0;39m [36m[RepositoryConfigurationExtensionSupport:349][0;39m Spring Data JDBC - Could not safely identify store assignment for repository candidate interface service.auth_service.repository.UserRefreshTokenRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+[24-05-29 17:50:37] [34m[INFO ][0;39m [36m[RepositoryConfigurationExtensionSupport:349][0;39m Spring Data JDBC - Could not safely identify store assignment for repository candidate interface service.auth_service.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+[24-05-29 17:50:37] [34m[INFO ][0;39m [36m[RepositoryConfigurationDelegate:201][0;39m Finished Spring Data repository scanning in 38 ms. Found 0 JDBC repository interfaces.
+[24-05-29 17:50:37] [34m[INFO ][0;39m [36m[RepositoryConfigurationDelegate:262][0;39m Multiple Spring Data modules found, entering strict repository configuration mode
+[24-05-29 17:50:37] [34m[INFO ][0;39m [36m[RepositoryConfigurationDelegate:132][0;39m Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[24-05-29 17:50:37] [34m[INFO ][0;39m [36m[RepositoryConfigurationDelegate:201][0;39m Finished Spring Data repository scanning in 35 ms. Found 2 JPA repository interfaces.
+[24-05-29 17:50:38] [34m[INFO ][0;39m [36m[TomcatWebServer:108][0;39m Tomcat initialized with port(s): 8088 (http)
+[24-05-29 17:50:38] [34m[INFO ][0;39m [36m[Http11NioProtocol:173][0;39m Initializing ProtocolHandler ["http-nio-8088"]
+[24-05-29 17:50:38] [34m[INFO ][0;39m [36m[StandardService:173][0;39m Starting service [Tomcat]
+[24-05-29 17:50:38] [34m[INFO ][0;39m [36m[StandardEngine:173][0;39m Starting Servlet engine: [Apache Tomcat/9.0.79]
+[24-05-29 17:50:38] [34m[INFO ][0;39m [36m[[/]:173][0;39m Initializing Spring embedded WebApplicationContext
+[24-05-29 17:50:38] [34m[INFO ][0;39m [36m[ServletWebServerApplicationContext:292][0;39m Root WebApplicationContext: initialization completed in 2550 ms
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[InternalLoggerFactory:59][0;39m Using SLF4J as the default logging framework
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[HikariConfig:971][0;39m Driver class com.mysql.jdbc.Driver found in Thread context class loader TomcatEmbeddedWebappClassLoader
+  context: ROOT
+  delegate: true
+----------> Parent Classloader:
+jdk.internal.loader.ClassLoaders$AppClassLoader@21588809
+
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[RequestLoggingFilter:242][0;39m Filter 'logFilter' configured for use
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[logging:152][0;39m Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[LogHelper:102][0;39m PersistenceUnitInfo [
+	name: default
+	persistence provider classname: null
+	classloader: jdk.internal.loader.ClassLoaders$AppClassLoader@21588809
+	excludeUnlistedClasses: true
+	JTA datasource: null
+	Non JTA datasource: HikariDataSource (null)
+	Transaction type: RESOURCE_LOCAL
+	PU root URL: file:/C:/Workspace/Test%20Lib/microservice-module/auth_service/target/classes/
+	Shared Cache Mode: UNSPECIFIED
+	Validation Mode: AUTO
+	Jar files URLs []
+	Managed classes names [
+		service.auth_service.entity.User
+		service.auth_service.entity.UserRefreshToken]
+	Mapping files names []
+	Properties []
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[IntegratorServiceImpl:46][0;39m Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[IntegratorServiceImpl:46][0;39m Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[IntegratorServiceImpl:46][0;39m Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+[24-05-29 17:50:38] [34m[INFO ][0;39m [36m[Version:44][0;39m HHH000412: Hibernate ORM core version 5.6.15.Final
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[Environment:199][0;39m HHH000206: hibernate.properties not found
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[ServiceBinding:68][0;39m Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[RegionFactoryInitiator:118][0;39m Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[RegionFactoryInitiator:49][0;39m Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+[24-05-29 17:50:38] [34m[INFO ][0;39m [36m[Version:56][0;39m HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration boolean -> org.hibernate.type.BooleanType@6cf047cf
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration boolean -> org.hibernate.type.BooleanType@6cf047cf
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@6cf047cf
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@79b63325
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration true_false -> org.hibernate.type.TrueFalseType@5bb97fe7
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration yes_no -> org.hibernate.type.YesNoType@1282f784
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration byte -> org.hibernate.type.ByteType@74764622
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration byte -> org.hibernate.type.ByteType@74764622
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@74764622
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration character -> org.hibernate.type.CharacterType@60c98f25
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration char -> org.hibernate.type.CharacterType@60c98f25
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@60c98f25
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration short -> org.hibernate.type.ShortType@46e388ec
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration short -> org.hibernate.type.ShortType@46e388ec
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration java.lang.Short -> org.hibernate.type.ShortType@46e388ec
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration integer -> org.hibernate.type.IntegerType@26463a6
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration int -> org.hibernate.type.IntegerType@26463a6
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@26463a6
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration long -> org.hibernate.type.LongType@4cc7e3ad
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration long -> org.hibernate.type.LongType@4cc7e3ad
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration java.lang.Long -> org.hibernate.type.LongType@4cc7e3ad
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration float -> org.hibernate.type.FloatType@77a2688d
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration float -> org.hibernate.type.FloatType@77a2688d
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration java.lang.Float -> org.hibernate.type.FloatType@77a2688d
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration double -> org.hibernate.type.DoubleType@d85b399
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration double -> org.hibernate.type.DoubleType@d85b399
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@d85b399
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@1d55dd21
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@1d55dd21
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration big_integer -> org.hibernate.type.BigIntegerType@a69f9d
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@a69f9d
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration string -> org.hibernate.type.StringType@660296d5
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration java.lang.String -> org.hibernate.type.StringType@660296d5
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration nstring -> org.hibernate.type.StringNVarcharType@2d9de284
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@3348c987
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration url -> org.hibernate.type.UrlType@3d6778d5
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration java.net.URL -> org.hibernate.type.UrlType@3d6778d5
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration Duration -> org.hibernate.type.DurationType@31d4b3e8
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration java.time.Duration -> org.hibernate.type.DurationType@31d4b3e8
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration Instant -> org.hibernate.type.InstantType@6b8bdcc6
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration java.time.Instant -> org.hibernate.type.InstantType@6b8bdcc6
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@45c90a05
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@45c90a05
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration LocalDate -> org.hibernate.type.LocalDateType@1d7f2f0a
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@1d7f2f0a
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@2a5c6b76
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@2a5c6b76
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@49122853
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@49122853
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@38a38ed4
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@38a38ed4
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@69d2e517
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@69d2e517
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration date -> org.hibernate.type.DateType@7c5c20ed
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration java.sql.Date -> org.hibernate.type.DateType@7c5c20ed
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration time -> org.hibernate.type.TimeType@4813d0
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration java.sql.Time -> org.hibernate.type.TimeType@4813d0
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration timestamp -> org.hibernate.type.TimestampType@6df2af02
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@6df2af02
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration java.util.Date -> org.hibernate.type.TimestampType@6df2af02
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@347123dc
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration calendar -> org.hibernate.type.CalendarType@72715e61
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@72715e61
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@72715e61
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@5611bba
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@580c17a0
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration locale -> org.hibernate.type.LocaleType@6463da36
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@6463da36
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration currency -> org.hibernate.type.CurrencyType@6afeaf2d
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@6afeaf2d
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration timezone -> org.hibernate.type.TimeZoneType@da22aa
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@da22aa
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration class -> org.hibernate.type.ClassType@7a3643e3
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration java.lang.Class -> org.hibernate.type.ClassType@7a3643e3
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@3212bfd
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@3212bfd
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@ba562e0
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration binary -> org.hibernate.type.BinaryType@53ba7997
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration byte[] -> org.hibernate.type.BinaryType@53ba7997
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration [B -> org.hibernate.type.BinaryType@53ba7997
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@cae2a97
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@cae2a97
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@cae2a97
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration row_version -> org.hibernate.type.RowVersionType@38e00b47
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration image -> org.hibernate.type.ImageType@66e1b2a
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration characters -> org.hibernate.type.CharArrayType@517fbf62
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration char[] -> org.hibernate.type.CharArrayType@517fbf62
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration [C -> org.hibernate.type.CharArrayType@517fbf62
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@1a7d0c9f
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@1a7d0c9f
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@1a7d0c9f
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration text -> org.hibernate.type.TextType@5a6f6cac
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration ntext -> org.hibernate.type.NTextType@7417ef4f
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration blob -> org.hibernate.type.BlobType@71e7830a
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@71e7830a
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@18d610e1
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration clob -> org.hibernate.type.ClobType@2b5f8e61
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@2b5f8e61
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration nclob -> org.hibernate.type.NClobType@5a466dd
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@5a466dd
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@6fbe4800
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@1760e594
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration serializable -> org.hibernate.type.SerializableType@503556cb
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration object -> org.hibernate.type.ObjectType@2807cf3
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@2807cf3
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@3d8d52be
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@645ba24a
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@5f6a8efe
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@3dd2b9c1
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@6a1d1467
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@536da29c
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@58fbcb71
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BasicTypeRegistry:157][0;39m Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@70cf7d1e
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BootstrapContextImpl:259][0;39m Injecting JPA temp ClassLoader [org.springframework.instrument.classloading.SimpleThrowawayClassLoader@370a8b6e] into BootstrapContext; was [null]
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[ClassLoaderAccessImpl:45][0;39m ClassLoaderAccessImpl#injectTempClassLoader(org.springframework.instrument.classloading.SimpleThrowawayClassLoader@370a8b6e) [was null]
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BootstrapContextImpl:269][0;39m Injecting ScanEnvironment [org.hibernate.jpa.boot.internal.StandardJpaScanEnvironmentImpl@38054d01] into BootstrapContext; was [null]
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BootstrapContextImpl:264][0;39m Injecting ScanOptions [org.hibernate.boot.archive.scan.internal.StandardScanOptions@28ce75ec] into BootstrapContext; was [org.hibernate.boot.archive.scan.internal.StandardScanOptions@778113f2]
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[BootstrapContextImpl:259][0;39m Injecting JPA temp ClassLoader [null] into BootstrapContext; was [org.springframework.instrument.classloading.SimpleThrowawayClassLoader@370a8b6e]
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[ClassLoaderAccessImpl:45][0;39m ClassLoaderAccessImpl#injectTempClassLoader(null) [was org.springframework.instrument.classloading.SimpleThrowawayClassLoader@370a8b6e]
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[DefaultIdentifierGeneratorFactory:98][0;39m Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[DefaultIdentifierGeneratorFactory:98][0;39m Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[DefaultIdentifierGeneratorFactory:98][0;39m Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[DefaultIdentifierGeneratorFactory:98][0;39m Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[DefaultIdentifierGeneratorFactory:98][0;39m Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[DefaultIdentifierGeneratorFactory:98][0;39m Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[DefaultIdentifierGeneratorFactory:98][0;39m Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[DefaultIdentifierGeneratorFactory:98][0;39m Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[DefaultIdentifierGeneratorFactory:98][0;39m Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[DefaultIdentifierGeneratorFactory:98][0;39m Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[DefaultIdentifierGeneratorFactory:98][0;39m Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[DefaultIdentifierGeneratorFactory:98][0;39m Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[DefaultIdentifierGeneratorFactory:98][0;39m Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[DefaultIdentifierGeneratorFactory:98][0;39m Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[HikariConfig:1103][0;39m HikariPool-1 - configuration:
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[HikariConfig:1135][0;39m allowPoolSuspension................................false
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[HikariConfig:1135][0;39m autoCommit................................true
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[HikariConfig:1135][0;39m catalog................................none
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[HikariConfig:1135][0;39m connectionInitSql................................none
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[HikariConfig:1135][0;39m connectionTestQuery................................none
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[HikariConfig:1135][0;39m connectionTimeout................................30000
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[HikariConfig:1135][0;39m dataSource................................none
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[HikariConfig:1135][0;39m dataSourceClassName................................none
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[HikariConfig:1135][0;39m dataSourceJNDI................................none
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[HikariConfig:1135][0;39m dataSourceProperties................................{password=<masked>}
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[HikariConfig:1135][0;39m driverClassName................................"com.mysql.jdbc.Driver"
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[HikariConfig:1135][0;39m exceptionOverrideClassName................................none
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[HikariConfig:1135][0;39m healthCheckProperties................................{}
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[HikariConfig:1135][0;39m healthCheckRegistry................................none
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[HikariConfig:1135][0;39m idleTimeout................................600000
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[HikariConfig:1135][0;39m initializationFailTimeout................................1
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[HikariConfig:1135][0;39m isolateInternalQueries................................false
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[HikariConfig:1135][0;39m jdbcUrl................................jdbc:mysql://localhost:3306/instagram
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[HikariConfig:1135][0;39m keepaliveTime................................0
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[HikariConfig:1135][0;39m leakDetectionThreshold................................0
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[HikariConfig:1135][0;39m maxLifetime................................1800000
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[HikariConfig:1135][0;39m maximumPoolSize................................10
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[HikariConfig:1135][0;39m metricRegistry................................none
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[HikariConfig:1135][0;39m metricsTrackerFactory................................com.zaxxer.hikari.metrics.micrometer.MicrometerMetricsTrackerFactory@2ec5cc14
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[HikariConfig:1135][0;39m minimumIdle................................10
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[HikariConfig:1135][0;39m password................................<masked>
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[HikariConfig:1135][0;39m poolName................................"HikariPool-1"
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[HikariConfig:1135][0;39m readOnly................................false
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[HikariConfig:1135][0;39m registerMbeans................................false
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[HikariConfig:1135][0;39m scheduledExecutor................................none
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[HikariConfig:1135][0;39m schema................................none
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[HikariConfig:1135][0;39m threadFactory................................internal
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[HikariConfig:1135][0;39m transactionIsolation................................default
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[HikariConfig:1135][0;39m username................................"root"
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[HikariConfig:1135][0;39m validationTimeout................................5000
+[24-05-29 17:50:38] [34m[INFO ][0;39m [36m[HikariDataSource:110][0;39m HikariPool-1 - Starting...
+[24-05-29 17:50:38] [31m[WARN ][0;39m [36m[DriverDataSource:70][0;39m Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+[24-05-29 17:50:38] [39m[DEBUG][0;39m [36m[DriverDataSource:77][0;39m Driver class com.mysql.jdbc.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@21588809
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[HikariPool:565][0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@32e7b78d
+[24-05-29 17:50:39] [34m[INFO ][0;39m [36m[HikariDataSource:123][0;39m HikariPool-1 - Start completed.
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[JdbcEnvironmentInitiator:72][0;39m Database ->
+       name : MySQL
+    version : 8.4.0
+      major : 8
+      minor : 4
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[JdbcEnvironmentInitiator:83][0;39m Driver ->
+       name : MySQL Connector/J
+    version : mysql-connector-j-8.0.33 (Revision: 7d6b0800528b6b25c68b52dc10d6c1c8429c100c)
+      major : 8
+      minor : 0
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[JdbcEnvironmentInitiator:389][0;39m JDBC version : 4.2
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[HikariPool:421][0;39m HikariPool-1 - Pool stats (total=1, active=1, idle=0, waiting=0)
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[HikariPool:729][0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7b5339bd
+[24-05-29 17:50:39] [34m[INFO ][0;39m [36m[Dialect:175][0;39m HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[HikariPool:729][0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2afca87e
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[HikariPool:729][0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2bd81acc
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[HikariPool:729][0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2eb2f633
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[IdentifierHelperBuilder:119][0;39m JDBC driver metadata reported database stores quoted identifiers in more than one case
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[IdentifierHelperBuilder:197][0;39m IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [LOWER]; that will likely lead to problems in schema update and validation if using quoted identifiers
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[HikariPool:729][0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2e7cb398
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[HikariPool:729][0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@661c8eb6
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[HikariPool:729][0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4cbce28c
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[HikariPool:729][0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5bf2129e
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[HikariPool:729][0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3b3db6a
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[HikariPool:421][0;39m HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[TypeConfiguration$Scope:149][0;39m Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@7e76a66f] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@72237be8]
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Namespace:51][0;39m Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[AnnotationBinder:547][0;39m Binding entity from annotated class: service.auth_service.entity.User
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Ejb3Column:227][0;39m Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[EntityBinder:431][0;39m Import with entity name User
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[EntityBinder:874][0;39m Bind entity service.auth_service.entity.User on table user
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Ejb3Column:227][0;39m Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[ClassLoaderAccessImpl:60][0;39m Not known whether passed class name [service.auth_service.entity.User] is safe
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[ClassLoaderAccessImpl:62][0;39m No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : service.auth_service.entity.User
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[PropertyBinder:175][0;39m MetadataSourceProcessor property id with lazy=false
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[AbstractPropertyHolder:94][0;39m Attempting to locate auto-apply AttributeConverter for property [service.auth_service.entity.User:id]
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[SimpleValueBinder:410][0;39m building SimpleValue for id
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[PropertyBinder:266][0;39m Building property id
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[BinderHelper:514][0;39m #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, identity, , ...)
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Ejb3Column:227][0;39m Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=account_non_expired, insertable=true, updatable=true, unique=false}
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[PropertyBinder:175][0;39m MetadataSourceProcessor property accountNonExpired with lazy=false
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[AbstractPropertyHolder:94][0;39m Attempting to locate auto-apply AttributeConverter for property [service.auth_service.entity.User:accountNonExpired]
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[SimpleValueBinder:410][0;39m building SimpleValue for accountNonExpired
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[PropertyBinder:266][0;39m Building property accountNonExpired
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Ejb3Column:227][0;39m Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=account_non_locked, insertable=true, updatable=true, unique=false}
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[PropertyBinder:175][0;39m MetadataSourceProcessor property accountNonLocked with lazy=false
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[AbstractPropertyHolder:94][0;39m Attempting to locate auto-apply AttributeConverter for property [service.auth_service.entity.User:accountNonLocked]
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[SimpleValueBinder:410][0;39m building SimpleValue for accountNonLocked
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[PropertyBinder:266][0;39m Building property accountNonLocked
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Ejb3Column:227][0;39m Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=avatar_id, insertable=true, updatable=true, unique=false}
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[PropertyBinder:175][0;39m MetadataSourceProcessor property avatarId with lazy=false
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[AbstractPropertyHolder:94][0;39m Attempting to locate auto-apply AttributeConverter for property [service.auth_service.entity.User:avatarId]
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[SimpleValueBinder:410][0;39m building SimpleValue for avatarId
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[PropertyBinder:266][0;39m Building property avatarId
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Ejb3Column:227][0;39m Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=avatar_path, insertable=true, updatable=true, unique=false}
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[PropertyBinder:175][0;39m MetadataSourceProcessor property avatarPath with lazy=false
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[AbstractPropertyHolder:94][0;39m Attempting to locate auto-apply AttributeConverter for property [service.auth_service.entity.User:avatarPath]
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[SimpleValueBinder:410][0;39m building SimpleValue for avatarPath
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[PropertyBinder:266][0;39m Building property avatarPath
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Ejb3Column:227][0;39m Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=create_at, insertable=true, updatable=true, unique=false}
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[PropertyBinder:175][0;39m MetadataSourceProcessor property createAt with lazy=false
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[AbstractPropertyHolder:94][0;39m Attempting to locate auto-apply AttributeConverter for property [service.auth_service.entity.User:createAt]
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[SimpleValueBinder:410][0;39m building SimpleValue for createAt
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[PropertyBinder:266][0;39m Building property createAt
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Ejb3Column:227][0;39m Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=credentials_non_expired, insertable=true, updatable=true, unique=false}
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[PropertyBinder:175][0;39m MetadataSourceProcessor property credentialsNonExpired with lazy=false
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[AbstractPropertyHolder:94][0;39m Attempting to locate auto-apply AttributeConverter for property [service.auth_service.entity.User:credentialsNonExpired]
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[SimpleValueBinder:410][0;39m building SimpleValue for credentialsNonExpired
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[PropertyBinder:266][0;39m Building property credentialsNonExpired
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Ejb3Column:227][0;39m Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=date_of_birth, insertable=true, updatable=true, unique=false}
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[PropertyBinder:175][0;39m MetadataSourceProcessor property dateOfBirth with lazy=false
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[AbstractPropertyHolder:94][0;39m Attempting to locate auto-apply AttributeConverter for property [service.auth_service.entity.User:dateOfBirth]
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[SimpleValueBinder:410][0;39m building SimpleValue for dateOfBirth
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[PropertyBinder:266][0;39m Building property dateOfBirth
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Ejb3Column:227][0;39m Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=email, insertable=true, updatable=true, unique=false}
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[PropertyBinder:175][0;39m MetadataSourceProcessor property email with lazy=false
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[AbstractPropertyHolder:94][0;39m Attempting to locate auto-apply AttributeConverter for property [service.auth_service.entity.User:email]
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[SimpleValueBinder:410][0;39m building SimpleValue for email
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[PropertyBinder:266][0;39m Building property email
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Ejb3Column:227][0;39m Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=enabled, insertable=true, updatable=true, unique=false}
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[PropertyBinder:175][0;39m MetadataSourceProcessor property enabled with lazy=false
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[AbstractPropertyHolder:94][0;39m Attempting to locate auto-apply AttributeConverter for property [service.auth_service.entity.User:enabled]
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[SimpleValueBinder:410][0;39m building SimpleValue for enabled
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[PropertyBinder:266][0;39m Building property enabled
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Ejb3Column:227][0;39m Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=first_name, insertable=true, updatable=true, unique=false}
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[PropertyBinder:175][0;39m MetadataSourceProcessor property firstName with lazy=false
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[AbstractPropertyHolder:94][0;39m Attempting to locate auto-apply AttributeConverter for property [service.auth_service.entity.User:firstName]
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[SimpleValueBinder:410][0;39m building SimpleValue for firstName
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[PropertyBinder:266][0;39m Building property firstName
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Ejb3Column:227][0;39m Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=last_name, insertable=true, updatable=true, unique=false}
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[PropertyBinder:175][0;39m MetadataSourceProcessor property lastName with lazy=false
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[AbstractPropertyHolder:94][0;39m Attempting to locate auto-apply AttributeConverter for property [service.auth_service.entity.User:lastName]
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[SimpleValueBinder:410][0;39m building SimpleValue for lastName
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[PropertyBinder:266][0;39m Building property lastName
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Ejb3Column:227][0;39m Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=modify_at, insertable=true, updatable=true, unique=false}
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[PropertyBinder:175][0;39m MetadataSourceProcessor property modifyAt with lazy=false
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[AbstractPropertyHolder:94][0;39m Attempting to locate auto-apply AttributeConverter for property [service.auth_service.entity.User:modifyAt]
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[SimpleValueBinder:410][0;39m building SimpleValue for modifyAt
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[PropertyBinder:266][0;39m Building property modifyAt
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Ejb3Column:227][0;39m Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=password, insertable=true, updatable=true, unique=false}
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[PropertyBinder:175][0;39m MetadataSourceProcessor property password with lazy=false
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[AbstractPropertyHolder:94][0;39m Attempting to locate auto-apply AttributeConverter for property [service.auth_service.entity.User:password]
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[SimpleValueBinder:410][0;39m building SimpleValue for password
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[PropertyBinder:266][0;39m Building property password
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Ejb3Column:227][0;39m Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=role, insertable=true, updatable=true, unique=false}
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[PropertyBinder:175][0;39m MetadataSourceProcessor property role with lazy=false
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[AbstractPropertyHolder:94][0;39m Attempting to locate auto-apply AttributeConverter for property [service.auth_service.entity.User:role]
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[SimpleValueBinder:410][0;39m building SimpleValue for role
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[PropertyBinder:266][0;39m Building property role
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Ejb3Column:227][0;39m Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=username, insertable=true, updatable=true, unique=false}
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[PropertyBinder:175][0;39m MetadataSourceProcessor property username with lazy=false
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[AbstractPropertyHolder:94][0;39m Attempting to locate auto-apply AttributeConverter for property [service.auth_service.entity.User:username]
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[SimpleValueBinder:410][0;39m building SimpleValue for username
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[PropertyBinder:266][0;39m Building property username
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[AnnotationBinder:547][0;39m Binding entity from annotated class: service.auth_service.entity.UserRefreshToken
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Ejb3Column:227][0;39m Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[EntityBinder:431][0;39m Import with entity name UserRefreshToken
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[EntityBinder:874][0;39m Bind entity service.auth_service.entity.UserRefreshToken on table user_refresh_token
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Ejb3Column:227][0;39m Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user_refresh_token), mappingColumn=email, insertable=true, updatable=true, unique=false}
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[ClassLoaderAccessImpl:60][0;39m Not known whether passed class name [service.auth_service.entity.UserRefreshToken] is safe
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[ClassLoaderAccessImpl:62][0;39m No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : service.auth_service.entity.UserRefreshToken
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[PropertyBinder:175][0;39m MetadataSourceProcessor property email with lazy=false
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[AbstractPropertyHolder:94][0;39m Attempting to locate auto-apply AttributeConverter for property [service.auth_service.entity.UserRefreshToken:email]
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[SimpleValueBinder:410][0;39m building SimpleValue for email
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[PropertyBinder:266][0;39m Building property email
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[BinderHelper:514][0;39m #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(email)]), email, assigned, , ...)
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Ejb3Column:227][0;39m Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user_refresh_token), mappingColumn=access_token_id, insertable=true, updatable=true, unique=false}
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[PropertyBinder:175][0;39m MetadataSourceProcessor property ati with lazy=false
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[AbstractPropertyHolder:94][0;39m Attempting to locate auto-apply AttributeConverter for property [service.auth_service.entity.UserRefreshToken:ati]
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[SimpleValueBinder:410][0;39m building SimpleValue for ati
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[PropertyBinder:266][0;39m Building property ati
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Ejb3Column:227][0;39m Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user_refresh_token), mappingColumn=refresh_token, insertable=true, updatable=true, unique=false}
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[PropertyBinder:175][0;39m MetadataSourceProcessor property refresh_token with lazy=true
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[AbstractPropertyHolder:94][0;39m Attempting to locate auto-apply AttributeConverter for property [service.auth_service.entity.UserRefreshToken:refresh_token]
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[SimpleValueBinder:410][0;39m building SimpleValue for refresh_token
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[PropertyBinder:266][0;39m Building property refresh_token
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Ejb3Column:227][0;39m Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user_refresh_token), mappingColumn=refresh_token_expiration, insertable=true, updatable=true, unique=false}
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[PropertyBinder:175][0;39m MetadataSourceProcessor property refresh_token_expiration with lazy=false
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[AbstractPropertyHolder:94][0;39m Attempting to locate auto-apply AttributeConverter for property [service.auth_service.entity.UserRefreshToken:refresh_token_expiration]
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[SimpleValueBinder:410][0;39m building SimpleValue for refresh_token_expiration
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[PropertyBinder:266][0;39m Building property refresh_token_expiration
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Ejb3Column:227][0;39m Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user_refresh_token), mappingColumn=refresh_token_id, insertable=true, updatable=true, unique=false}
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[PropertyBinder:175][0;39m MetadataSourceProcessor property refresh_token_id with lazy=false
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[AbstractPropertyHolder:94][0;39m Attempting to locate auto-apply AttributeConverter for property [service.auth_service.entity.UserRefreshToken:refresh_token_id]
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[SimpleValueBinder:410][0;39m building SimpleValue for refresh_token_id
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[PropertyBinder:266][0;39m Building property refresh_token_id
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[SimpleValueBinder:455][0;39m Starting fillSimpleValue for id
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[SimpleValueBinder:455][0;39m Starting fillSimpleValue for accountNonExpired
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[SimpleValueBinder:455][0;39m Starting fillSimpleValue for accountNonLocked
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[SimpleValueBinder:455][0;39m Starting fillSimpleValue for avatarId
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[SimpleValueBinder:455][0;39m Starting fillSimpleValue for avatarPath
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[SimpleValueBinder:455][0;39m Starting fillSimpleValue for createAt
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[SimpleValueBinder:455][0;39m Starting fillSimpleValue for credentialsNonExpired
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[SimpleValueBinder:455][0;39m Starting fillSimpleValue for dateOfBirth
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[SimpleValueBinder:455][0;39m Starting fillSimpleValue for email
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[SimpleValueBinder:455][0;39m Starting fillSimpleValue for enabled
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[SimpleValueBinder:455][0;39m Starting fillSimpleValue for firstName
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[SimpleValueBinder:455][0;39m Starting fillSimpleValue for lastName
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[SimpleValueBinder:455][0;39m Starting fillSimpleValue for modifyAt
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[SimpleValueBinder:455][0;39m Starting fillSimpleValue for password
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[SimpleValueBinder:455][0;39m Starting fillSimpleValue for role
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[SimpleValueBinder:455][0;39m Starting fillSimpleValue for username
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[SimpleValueBinder:455][0;39m Starting fillSimpleValue for email
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[SimpleValueBinder:455][0;39m Starting fillSimpleValue for ati
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[SimpleValueBinder:455][0;39m Starting fillSimpleValue for refresh_token
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[SimpleValueBinder:455][0;39m Starting fillSimpleValue for refresh_token_expiration
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[SimpleValueBinder:455][0;39m Starting fillSimpleValue for refresh_token_id
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[PrimaryKey:36][0;39m Forcing column [id] to be non-null as it is part of the primary key for table [user]
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[PrimaryKey:36][0;39m Forcing column [email] to be non-null as it is part of the primary key for table [user_refresh_token]
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[SessionFactoryImpl:208][0;39m Building session factory
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Settings:68][0;39m SessionFactory name : null
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Settings:69][0;39m Automatic flush during beforeCompletion(): enabled
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Settings:70][0;39m Automatic session close at end of transaction: disabled
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Settings:72][0;39m Statistics: disabled
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Settings:74][0;39m Deleted entity synthetic identifier rollback: disabled
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Settings:75][0;39m Default entity-mode: pojo
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Settings:76][0;39m Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Settings:77][0;39m Allow initialization of lazy state outside session : disabled
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Settings:79][0;39m Using BatchFetchStyle : LEGACY
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Settings:80][0;39m Default batch fetch size: -1
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Settings:81][0;39m Maximum outer join fetch depth: 2
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Settings:82][0;39m Default null ordering: NONE
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Settings:83][0;39m Order SQL updates by primary key: disabled
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Settings:84][0;39m Order SQL inserts for batching: disabled
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Settings:86][0;39m multi-tenancy strategy : NONE
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Settings:88][0;39m JTA Track by Thread: enabled
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Settings:90][0;39m Query language substitutions: {}
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Settings:91][0;39m Named query checking : enabled
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Settings:93][0;39m Second-level cache: disabled
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Settings:94][0;39m Second-level query cache: disabled
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Settings:95][0;39m Second-level query cache factory: null
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Settings:96][0;39m Second-level cache region prefix: null
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Settings:97][0;39m Optimize second-level cache for minimal puts: disabled
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Settings:98][0;39m Structured second-level cache entries: disabled
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Settings:99][0;39m Second-level cache direct-reference entries: disabled
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Settings:100][0;39m Automatic eviction of collection cache: disabled
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Settings:102][0;39m JDBC batch size: 15
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Settings:103][0;39m JDBC batch updates for versioned data: enabled
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Settings:104][0;39m Scrollable result sets: enabled
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Settings:105][0;39m Wrap result sets: disabled
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Settings:106][0;39m JDBC3 getGeneratedKeys(): enabled
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Settings:107][0;39m JDBC result set fetch size: null
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Settings:108][0;39m Connection release mode: ON_CLOSE
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Settings:109][0;39m Generate SQL with comments: disabled
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Settings:111][0;39m JPA compliance - query : disabled
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Settings:112][0;39m JPA compliance - closed-handling : disabled
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Settings:113][0;39m JPA compliance - lists : disabled
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[Settings:114][0;39m JPA compliance - transactions : disabled
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[SessionFactoryServiceRegistryImpl:92][0;39m EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[SessionFactoryServiceRegistryImpl:92][0;39m EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[SessionFactoryImpl:276][0;39m Session factory constructed with filter configurations : {}
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[SessionFactoryImpl:277][0;39m Instantiating session factory with properties: {hibernate.format_sql=true, hibernate.id.new_generator_mappings=true, java.specification.version=17, sun.cpu.isalist=amd64, hibernate.resource.beans.container=org.springframework.orm.hibernate5.SpringBeanContainer@7c56c911, hibernate.connection.handling_mode=DELAYED_ACQUISITION_AND_HOLD, sun.jnu.encoding=Cp1252, hibernate.dialect=org.hibernate.dialect.MySQL57Dialect, hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy, java.class.path=C:\Workspace\Test Lib\microservice-module\auth_service\target\classes;C:\Users\RB099\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\2.7.15\spring-boot-starter-data-jpa-2.7.15.jar;C:\Users\RB099\.m2\repository\org\springframework\boot\spring-boot-starter-aop\2.7.15\spring-boot-starter-aop-2.7.15.jar;C:\Users\RB099\.m2\repository\org\aspectj\aspectjweaver\1.9.7\aspectjweaver-1.9.7.jar;C:\Users\RB099\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\2.7.15\spring-boot-starter-jdbc-2.7.15.jar;C:\Users\RB099\.m2\repository\com\zaxxer\HikariCP\4.0.3\HikariCP-4.0.3.jar;C:\Users\RB099\.m2\repository\org\springframework\spring-jdbc\5.3.29\spring-jdbc-5.3.29.jar;C:\Users\RB099\.m2\repository\jakarta\transaction\jakarta.transaction-api\1.3.3\jakarta.transaction-api-1.3.3.jar;C:\Users\RB099\.m2\repository\jakarta\persistence\jakarta.persistence-api\2.2.3\jakarta.persistence-api-2.2.3.jar;C:\Users\RB099\.m2\repository\org\hibernate\hibernate-core\5.6.15.Final\hibernate-core-5.6.15.Final.jar;C:\Users\RB099\.m2\repository\org\jboss\logging\jboss-logging\3.4.3.Final\jboss-logging-3.4.3.Final.jar;C:\Users\RB099\.m2\repository\net\bytebuddy\byte-buddy\1.12.23\byte-buddy-1.12.23.jar;C:\Users\RB099\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\RB099\.m2\repository\org\jboss\jandex\2.4.2.Final\jandex-2.4.2.Final.jar;C:\Users\RB099\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.1.2.Final\hibernate-commons-annotations-5.1.2.Final.jar;C:\Users\RB099\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.8\jaxb-runtime-2.3.8.jar;C:\Users\RB099\.m2\repository\org\glassfish\jaxb\txw2\2.3.8\txw2-2.3.8.jar;C:\Users\RB099\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.12\istack-commons-runtime-3.0.12.jar;C:\Users\RB099\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\RB099\.m2\repository\org\springframework\data\spring-data-jpa\2.7.15\spring-data-jpa-2.7.15.jar;C:\Users\RB099\.m2\repository\org\springframework\data\spring-data-commons\2.7.15\spring-data-commons-2.7.15.jar;C:\Users\RB099\.m2\repository\org\springframework\spring-orm\5.3.29\spring-orm-5.3.29.jar;C:\Users\RB099\.m2\repository\org\springframework\spring-context\5.3.29\spring-context-5.3.29.jar;C:\Users\RB099\.m2\repository\org\springframework\spring-tx\5.3.29\spring-tx-5.3.29.jar;C:\Users\RB099\.m2\repository\org\springframework\spring-beans\5.3.29\spring-beans-5.3.29.jar;C:\Users\RB099\.m2\repository\org\springframework\spring-aspects\5.3.29\spring-aspects-5.3.29.jar;C:\Users\RB099\.m2\repository\org\springframework\boot\spring-boot-starter-web\2.7.15\spring-boot-starter-web-2.7.15.jar;C:\Users\RB099\.m2\repository\org\springframework\boot\spring-boot-starter\2.7.15\spring-boot-starter-2.7.15.jar;C:\Users\RB099\.m2\repository\org\springframework\boot\spring-boot\2.7.15\spring-boot-2.7.15.jar;C:\Users\RB099\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.7.15\spring-boot-autoconfigure-2.7.15.jar;C:\Users\RB099\.m2\repository\org\springframework\boot\spring-boot-starter-logging\2.7.15\spring-boot-starter-logging-2.7.15.jar;C:\Users\RB099\.m2\repository\ch\qos\logback\logback-classic\1.2.12\logback-classic-1.2.12.jar;C:\Users\RB099\.m2\repository\ch\qos\logback\logback-core\1.2.12\logback-core-1.2.12.jar;C:\Users\RB099\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.17.2\log4j-to-slf4j-2.17.2.jar;C:\Users\RB099\.m2\repository\org\slf4j\jul-to-slf4j\1.7.36\jul-to-slf4j-1.7.36.jar;C:\Users\RB099\.m2\repository\jakarta\annotation\jakarta.annotation-api\1.3.5\jakarta.annotation-api-1.3.5.jar;C:\Users\RB099\.m2\repository\org\yaml\snakeyaml\1.30\snakeyaml-1.30.jar;C:\Users\RB099\.m2\repository\org\springframework\boot\spring-boot-starter-json\2.7.15\spring-boot-starter-json-2.7.15.jar;C:\Users\RB099\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.13.5\jackson-datatype-jdk8-2.13.5.jar;C:\Users\RB099\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.13.5\jackson-datatype-jsr310-2.13.5.jar;C:\Users\RB099\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.13.5\jackson-module-parameter-names-2.13.5.jar;C:\Users\RB099\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\2.7.15\spring-boot-starter-tomcat-2.7.15.jar;C:\Users\RB099\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\9.0.79\tomcat-embed-core-9.0.79.jar;C:\Users\RB099\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\9.0.79\tomcat-embed-el-9.0.79.jar;C:\Users\RB099\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\9.0.79\tomcat-embed-websocket-9.0.79.jar;C:\Users\RB099\.m2\repository\org\springframework\spring-web\5.3.29\spring-web-5.3.29.jar;C:\Users\RB099\.m2\repository\org\springframework\spring-webmvc\5.3.29\spring-webmvc-5.3.29.jar;C:\Users\RB099\.m2\repository\org\springframework\spring-expression\5.3.29\spring-expression-5.3.29.jar;C:\Users\RB099\.m2\repository\com\mysql\mysql-connector-j\8.0.33\mysql-connector-j-8.0.33.jar;C:\Users\RB099\.m2\repository\org\projectlombok\lombok\1.18.28\lombok-1.18.28.jar;C:\Users\RB099\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\RB099\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\RB099\.m2\repository\org\springframework\spring-core\5.3.29\spring-core-5.3.29.jar;C:\Users\RB099\.m2\repository\org\springframework\spring-jcl\5.3.29\spring-jcl-5.3.29.jar;C:\Users\RB099\.m2\repository\org\springframework\boot\spring-boot-starter-actuator\2.7.0\spring-boot-starter-actuator-2.7.0.jar;C:\Users\RB099\.m2\repository\org\springframework\boot\spring-boot-actuator-autoconfigure\2.7.15\spring-boot-actuator-autoconfigure-2.7.15.jar;C:\Users\RB099\.m2\repository\org\springframework\boot\spring-boot-actuator\2.7.15\spring-boot-actuator-2.7.15.jar;C:\Users\RB099\.m2\repository\io\micrometer\micrometer-core\1.9.14\micrometer-core-1.9.14.jar;C:\Users\RB099\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.12\HdrHistogram-2.1.12.jar;C:\Users\RB099\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\RB099\.m2\repository\org\springframework\boot\spring-boot-starter-data-jdbc\2.7.15\spring-boot-starter-data-jdbc-2.7.15.jar;C:\Users\RB099\.m2\repository\org\springframework\data\spring-data-jdbc\2.4.15\spring-data-jdbc-2.4.15.jar;C:\Users\RB099\.m2\repository\org\springframework\data\spring-data-relational\2.4.15\spring-data-relational-2.4.15.jar;C:\Users\RB099\.m2\repository\io\jsonwebtoken\jjwt-api\0.11.5\jjwt-api-0.11.5.jar;C:\Users\RB099\.m2\repository\io\jsonwebtoken\jjwt-jackson\0.11.5\jjwt-jackson-0.11.5.jar;C:\Users\RB099\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.5\jackson-databind-2.13.5.jar;C:\Users\RB099\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.5\jackson-annotations-2.13.5.jar;C:\Users\RB099\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.5\jackson-core-2.13.5.jar;C:\Users\RB099\.m2\repository\io\jsonwebtoken\jjwt-impl\0.11.2\jjwt-impl-0.11.2.jar;C:\Users\RB099\.m2\repository\org\springdoc\springdoc-openapi-ui\1.6.6\springdoc-openapi-ui-1.6.6.jar;C:\Users\RB099\.m2\repository\org\springdoc\springdoc-openapi-webmvc-core\1.6.6\springdoc-openapi-webmvc-core-1.6.6.jar;C:\Users\RB099\.m2\repository\org\springdoc\springdoc-openapi-common\1.6.6\springdoc-openapi-common-1.6.6.jar;C:\Users\RB099\.m2\repository\io\swagger\core\v3\swagger-core\2.1.12\swagger-core-2.1.12.jar;C:\Users\RB099\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\RB099\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.13.5\jackson-dataformat-yaml-2.13.5.jar;C:\Users\RB099\.m2\repository\io\swagger\core\v3\swagger-annotations\2.1.12\swagger-annotations-2.1.12.jar;C:\Users\RB099\.m2\repository\io\swagger\core\v3\swagger-models\2.1.12\swagger-models-2.1.12.jar;C:\Users\RB099\.m2\repository\jakarta\validation\jakarta.validation-api\2.0.2\jakarta.validation-api-2.0.2.jar;C:\Users\RB099\.m2\repository\org\webjars\swagger-ui\4.5.0\swagger-ui-4.5.0.jar;C:\Users\RB099\.m2\repository\org\webjars\webjars-locator-core\0.50\webjars-locator-core-0.50.jar;C:\Users\RB099\.m2\repository\io\github\classgraph\classgraph\4.8.138\classgraph-4.8.138.jar;C:\Users\RB099\.m2\repository\io\springfox\springfox-swagger2\2.9.2\springfox-swagger2-2.9.2.jar;C:\Users\RB099\.m2\repository\io\swagger\swagger-annotations\1.5.20\swagger-annotations-1.5.20.jar;C:\Users\RB099\.m2\repository\io\swagger\swagger-models\1.5.20\swagger-models-1.5.20.jar;C:\Users\RB099\.m2\repository\io\springfox\springfox-spi\2.9.2\springfox-spi-2.9.2.jar;C:\Users\RB099\.m2\repository\io\springfox\springfox-core\2.9.2\springfox-core-2.9.2.jar;C:\Users\RB099\.m2\repository\io\springfox\springfox-schema\2.9.2\springfox-schema-2.9.2.jar;C:\Users\RB099\.m2\repository\io\springfox\springfox-swagger-common\2.9.2\springfox-swagger-common-2.9.2.jar;C:\Users\RB099\.m2\repository\io\springfox\springfox-spring-web\2.9.2\springfox-spring-web-2.9.2.jar;C:\Users\RB099\.m2\repository\com\google\guava\guava\20.0\guava-20.0.jar;C:\Users\RB099\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\RB099\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\RB099\.m2\repository\org\springframework\plugin\spring-plugin-core\1.2.0.RELEASE\spring-plugin-core-1.2.0.RELEASE.jar;C:\Users\RB099\.m2\repository\org\springframework\plugin\spring-plugin-metadata\1.2.0.RELEASE\spring-plugin-metadata-1.2.0.RELEASE.jar;C:\Users\RB099\.m2\repository\org\mapstruct\mapstruct\1.2.0.Final\mapstruct-1.2.0.Final.jar;C:\Users\RB099\.m2\repository\io\springfox\springfox-swagger-ui\2.9.2\springfox-swagger-ui-2.9.2.jar;C:\Users\RB099\.m2\repository\org\springframework\boot\spring-boot-starter-security\2.7.15\spring-boot-starter-security-2.7.15.jar;C:\Users\RB099\.m2\repository\org\springframework\spring-aop\5.3.29\spring-aop-5.3.29.jar;C:\Users\RB099\.m2\repository\org\springframework\security\spring-security-config\5.7.10\spring-security-config-5.7.10.jar;C:\Users\RB099\.m2\repository\org\springframework\security\spring-security-web\5.7.10\spring-security-web-5.7.10.jar;C:\Users\RB099\.m2\repository\org\springframework\security\spring-security-core\5.7.10\spring-security-core-5.7.10.jar;C:\Users\RB099\.m2\repository\org\springframework\security\spring-security-crypto\5.7.10\spring-security-crypto-5.7.10.jar;C:\Users\RB099\.m2\repository\org\apache\logging\log4j\log4j-core\2.17.1\log4j-core-2.17.1.jar;C:\Users\RB099\.m2\repository\org\apache\logging\log4j\log4j-api\2.17.2\log4j-api-2.17.2.jar;C:\Users\RB099\.m2\repository\org\json\json\20230227\json-20230227.jar, java.vm.vendor=JetBrains s.r.o., sun.arch.data.model=64, user.variant=, java.vendor.url=https://openjdk.java.net/, catalina.useNaming=false, user.timezone=Asia/Bangkok, jakarta.persistence.sharedCache.mode=UNSPECIFIED, java.vm.specification.version=17, os.name=Windows 10, javax.persistence.validation.mode=AUTO, jakarta.persistence.nonJtaDataSource=HikariDataSource (HikariPool-1), sun.java.launcher=SUN_STANDARD, user.country=US, sun.boot.library.path=C:\Users\RB099\.jdks\jbr-17.0.8\bin, sun.java.command=service.auth_service.AuthServiceApplication, spring.application.admin.enabled=true, javax.persistence.nonJtaDataSource=HikariDataSource (HikariPool-1), hibernate.transaction.jta.platform=org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform@1de6dc80, com.sun.management.jmxremote=, javax.persistence.sharedCache.mode=UNSPECIFIED, jdk.debug=release, spring.liveBeansView.mbeanDomain=, sun.cpu.endian=little, user.home=C:\Users\RB099, user.language=en, java.specification.vendor=Oracle Corporation, java.version.date=2023-07-18, java.home=C:\Users\RB099\.jdks\jbr-17.0.8, file.separator=\, spring.output.ansi.enabled=always, java.vm.compressedOopsMode=Zero based, line.separator=
+, hibernate.persistenceUnitName=default, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, FILE_LOG_CHARSET=UTF-8, hibernate.transaction.coordinator_class=class org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl, java.awt.headless=true, jbr.virtualization.information=Hyper-V role, jakarta.persistence.validation.mode=AUTO, hibernate.hbm2ddl.auto=update, user.script=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=17.0.8+7-b1000.8, user.name=RB099, spring.jmx.enabled=true, path.separator=;, os.version=10.0, java.runtime.name=OpenJDK Runtime Environment, file.encoding=UTF-8, hibernate.ejb.persistenceUnitName=default, spring.beaninfo.ignore=true, java.vm.name=OpenJDK 64-Bit Server VM, hibernate.show_sql=true, java.vendor.version=JBR-17.0.8+7-1000.8-nomod, java.vendor.url.bug=https://bugreport.java.com/bugreport/, java.io.tmpdir=C:\Users\RB099\AppData\Local\Temp\, catalina.home=C:\Users\RB099\AppData\Local\Temp\tomcat.8088.4654589365213797425, java.version=17.0.8, hibernate.physical_naming_strategy=org.hibernate.boot.model.naming.CamelCaseToUnderscoresNamingStrategy, user.dir=C:\Workspace\Test Lib\microservice-module, os.arch=amd64, java.vm.specification.name=Java Virtual Machine Specification, PID=15684, sun.os.patch.level=, CONSOLE_LOG_CHARSET=UTF-8, catalina.base=C:\Users\RB099\AppData\Local\Temp\tomcat.8088.4654589365213797425, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.registry.StandardServiceRegistryBuilder$1@418d1c03, native.encoding=Cp1252, java.library.path=C:\Users\RB099\.jdks\jbr-17.0.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\nvm;C:\Program Files\nodejs;C:\Program Files (x86)\Gpg4win\..\GnuPG\bin;C:\Program Files\Java\jdk-11;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\PuTTY\;C:\Python\Scripts\;C:\Python\;C:\Users\RB099\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\RB099\AppData\Local\Programs\Python\Python37-32\;C:\Anaconda;C:\Anaconda\Library\mingw-w64\bin;C:\Anaconda\Library\usr\bin;C:\Anaconda\Library\bin;C:\Anaconda\Scripts;C:\Users\RB099\.console-ninja\.bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\RB099\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA Educational Edition 2022.2.2\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2023.2\bin;C:\VSCode\Microsoft VS Code\bin;C:\Users\RB099\AppData\Roaming\npm;C:\nvm;C:\Program Files\nodejs;C:\Maven\apache-maven-3.9.5\bin;;C:\Program Files\JetBrains\IntelliJ IDEA 2024.1\bin;;., java.vendor=JetBrains s.r.o., java.vm.info=mixed mode, emulated-client, java.vm.version=17.0.8+7-b1000.8, hibernate.bytecode.use_reflection_optimizer=false, java.rmi.server.randomIDs=true, sun.io.unicode.encoding=UnicodeLittle, hibernate.archive.scanner=org.hibernate.boot.archive.scan.internal.DisabledScanner, hibernate.connection.datasource=HikariDataSource (HikariPool-1), java.class.version=61.0}
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[TypeSafeActivator:93][0;39m Unable to acquire Bean Validation ValidatorFactory, skipping activation
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[JaccIntegrator:84][0;39m Skipping JACC integration as it was not enabled
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[EnumType:126][0;39m Using ORDINAL-based conversion for Enum service.auth_service.entity.Role
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[SessionFactoryImpl:316][0;39m Instantiated session factory
+[24-05-29 17:50:39] [39m[DEBUG][0;39m [36m[TypeConfiguration$Scope:154][0;39m Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@7e76a66f] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@4e14d520]
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[ClassLoaderAccessImpl:60][0;39m Not known whether passed class name [service.auth_service.entity.User] is safe
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[ClassLoaderAccessImpl:62][0;39m No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : service.auth_service.entity.User
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[ClassLoaderAccessImpl:60][0;39m Not known whether passed class name [service.auth_service.entity.UserRefreshToken] is safe
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[ClassLoaderAccessImpl:62][0;39m No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : service.auth_service.entity.UserRefreshToken
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[AbstractEntityPersister:4031][0;39m Static SQL for entity: service.auth_service.entity.User
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[AbstractEntityPersister:4036][0;39m  Version select: select id from user where id =?
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[AbstractEntityPersister:4039][0;39m  Snapshot select: select user_.id, user_.account_non_expired as account_2_0_, user_.account_non_locked as account_3_0_, user_.avatar_id as avatar_i4_0_, user_.avatar_path as avatar_p5_0_, user_.create_at as create_a6_0_, user_.credentials_non_expired as credenti7_0_, user_.date_of_birth as date_of_8_0_, user_.email as email9_0_, user_.enabled as enabled10_0_, user_.first_name as first_n11_0_, user_.last_name as last_na12_0_, user_.modify_at as modify_13_0_, user_.password as passwor14_0_, user_.role as role15_0_, user_.username as usernam16_0_ from user user_ where user_.id=?
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[AbstractEntityPersister:394][0;39m  Insert 0: insert into user (account_non_expired, account_non_locked, avatar_id, avatar_path, create_at, credentials_non_expired, date_of_birth, email, enabled, first_name, last_name, modify_at, password, role, username, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[AbstractEntityPersister:394][0;39m  Update 0: update user set account_non_expired=?, account_non_locked=?, avatar_id=?, avatar_path=?, create_at=?, credentials_non_expired=?, date_of_birth=?, email=?, enabled=?, first_name=?, last_name=?, modify_at=?, password=?, role=?, username=? where id=?
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[AbstractEntityPersister:394][0;39m  Delete 0: delete from user where id=?
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[AbstractEntityPersister:4047][0;39m  Identity insert: insert into user (account_non_expired, account_non_locked, avatar_id, avatar_path, create_at, credentials_non_expired, date_of_birth, email, enabled, first_name, last_name, modify_at, password, role, username) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[QuerySpacesImpl:174][0;39m Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@337c0ee4]
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[MetamodelGraphWalker:146][0;39m Visiting attribute path : accountNonExpired
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[MetamodelGraphWalker:146][0;39m Visiting attribute path : accountNonLocked
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[MetamodelGraphWalker:146][0;39m Visiting attribute path : avatarId
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[MetamodelGraphWalker:146][0;39m Visiting attribute path : avatarPath
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[MetamodelGraphWalker:146][0;39m Visiting attribute path : createAt
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[MetamodelGraphWalker:146][0;39m Visiting attribute path : credentialsNonExpired
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[MetamodelGraphWalker:146][0;39m Visiting attribute path : dateOfBirth
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[MetamodelGraphWalker:146][0;39m Visiting attribute path : email
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[MetamodelGraphWalker:146][0;39m Visiting attribute path : enabled
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[MetamodelGraphWalker:146][0;39m Visiting attribute path : firstName
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[MetamodelGraphWalker:146][0;39m Visiting attribute path : lastName
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[MetamodelGraphWalker:146][0;39m Visiting attribute path : modifyAt
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[MetamodelGraphWalker:146][0;39m Visiting attribute path : password
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[MetamodelGraphWalker:146][0;39m Visiting attribute path : role
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[MetamodelGraphWalker:146][0;39m Visiting attribute path : username
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[FetchStyleLoadPlanBuildingAssociationVisitationStrategy:160][0;39m Building LoadPlan...
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[LoadQueryJoinAndFetchProcessor:102][0;39m processing queryspace <gen:0>
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[LoadPlanTreePrinter:55][0;39m LoadPlan(entity=service.auth_service.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=service.auth_service.entity.User, querySpaceUid=<gen:0>, path=service.auth_service.entity.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=service.auth_service.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[EntityLoader:129][0;39m Static select for entity service.auth_service.entity.User [NONE]: select user0_.id as id1_0_0_, user0_.account_non_expired as account_2_0_0_, user0_.account_non_locked as account_3_0_0_, user0_.avatar_id as avatar_i4_0_0_, user0_.avatar_path as avatar_p5_0_0_, user0_.create_at as create_a6_0_0_, user0_.credentials_non_expired as credenti7_0_0_, user0_.date_of_birth as date_of_8_0_0_, user0_.email as email9_0_0_, user0_.enabled as enabled10_0_0_, user0_.first_name as first_n11_0_0_, user0_.last_name as last_na12_0_0_, user0_.modify_at as modify_13_0_0_, user0_.password as passwor14_0_0_, user0_.role as role15_0_0_, user0_.username as usernam16_0_0_ from user user0_ where user0_.id=?
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[AbstractEntityPersister:4031][0;39m Static SQL for entity: service.auth_service.entity.UserRefreshToken
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[AbstractEntityPersister:4036][0;39m  Version select: select email from user_refresh_token where email =?
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[AbstractEntityPersister:4039][0;39m  Snapshot select: select userrefres_.email, userrefres_.access_token_id as access_t2_1_, userrefres_.refresh_token as refresh_3_1_, userrefres_.refresh_token_expiration as refresh_4_1_, userrefres_.refresh_token_id as refresh_5_1_ from user_refresh_token userrefres_ where userrefres_.email=?
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[AbstractEntityPersister:394][0;39m  Insert 0: insert into user_refresh_token (access_token_id, refresh_token, refresh_token_expiration, refresh_token_id, email) values (?, ?, ?, ?, ?)
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[AbstractEntityPersister:394][0;39m  Update 0: update user_refresh_token set access_token_id=?, refresh_token=?, refresh_token_expiration=?, refresh_token_id=? where email=?
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[AbstractEntityPersister:394][0;39m  Delete 0: delete from user_refresh_token where email=?
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[QuerySpacesImpl:174][0;39m Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@232b3b4c]
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[MetamodelGraphWalker:146][0;39m Visiting attribute path : ati
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[MetamodelGraphWalker:146][0;39m Visiting attribute path : refresh_token
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[MetamodelGraphWalker:146][0;39m Visiting attribute path : refresh_token_expiration
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[MetamodelGraphWalker:146][0;39m Visiting attribute path : refresh_token_id
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[FetchStyleLoadPlanBuildingAssociationVisitationStrategy:160][0;39m Building LoadPlan...
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[LoadQueryJoinAndFetchProcessor:102][0;39m processing queryspace <gen:0>
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[LoadPlanTreePrinter:55][0;39m LoadPlan(entity=service.auth_service.entity.UserRefreshToken)
+    - Returns
+       - EntityReturnImpl(entity=service.auth_service.entity.UserRefreshToken, querySpaceUid=<gen:0>, path=service.auth_service.entity.UserRefreshToken)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=service.auth_service.entity.UserRefreshToken)
+          - SQL table alias mapping - userrefres0_
+          - alias suffix - 0_
+          - suffixed key columns - {email1_1_0_}
+
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[EntityLoader:129][0;39m Static select for entity service.auth_service.entity.UserRefreshToken [NONE]: select userrefres0_.email as email1_1_0_, userrefres0_.access_token_id as access_t2_1_0_, userrefres0_.refresh_token as refresh_3_1_0_, userrefres0_.refresh_token_expiration as refresh_4_1_0_, userrefres0_.refresh_token_id as refresh_5_1_0_ from user_refresh_token userrefres0_ where userrefres0_.email=?
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[Table:497][0;39m No alter strings for table : user
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[Table:497][0;39m No alter strings for table : user_refresh_token
+[24-05-29 17:50:40] [34m[INFO ][0;39m [36m[JtaPlatformInitiator:52][0;39m HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[SessionFactoryServiceRegistryImpl:92][0;39m EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[QueryTranslatorFactoryInitiator:45][0;39m QueryTranslatorFactory: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@658098a2
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[NamedQueryRepository:171][0;39m Checking 0 named HQL queries
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[NamedQueryRepository:185][0;39m Checking 0 named SQL queries
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[SessionFactoryRegistry:51][0;39m Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@42fd8f2f
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[SessionFactoryRegistry:73][0;39m Registering SessionFactory: 76633fda-6635-428e-9161-fb7a27e1b768 (<unnamed>)
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[SessionFactoryRegistry:80][0;39m Not binding SessionFactory to JNDI, no JNDI name configured
+[24-05-29 17:50:40] [34m[INFO ][0;39m [36m[LocalContainerEntityManagerFactoryBean:437][0;39m Initialized JPA EntityManagerFactory for persistence unit 'default'
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[StatisticsInitiator:101][0;39m Statistics initialized [enabled=false]
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[TransactionImpl:53][0;39m On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[TransactionImpl:53][0;39m On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[24-05-29 17:50:40] [39m[DEBUG][0;39m [36m[TransactionImpl:53][0;39m On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[24-05-29 17:50:41] [31m[WARN ][0;39m [36m[JpaBaseConfiguration$JpaWebConfiguration:223][0;39m spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[24-05-29 17:50:41] [39m[DEBUG][0;39m [36m[TransactionImpl:53][0;39m On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[24-05-29 17:50:41] [39m[DEBUG][0;39m [36m[TransactionImpl:53][0;39m On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[24-05-29 17:50:41] [39m[DEBUG][0;39m [36m[TransactionImpl:53][0;39m On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[24-05-29 17:50:41] [39m[DEBUG][0;39m [36m[Mappings:295][0;39m 
+	s.a.c.AuthController:
+	{POST [/v1/auth/registry]}: createUser(UserDto)
+	{POST [/v1/auth/login]}: login(LoginRequest)
+[24-05-29 17:50:41] [39m[DEBUG][0;39m [36m[Mappings:295][0;39m 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+[24-05-29 17:50:41] [39m[DEBUG][0;39m [36m[Mappings:295][0;39m 
+	o.s.w.a.OpenApiWebMvcResource:
+	{GET [/api-docs.yaml], produces [application/vnd.oai.openapi]}: openapiYaml(HttpServletRequest,String,Locale)
+	{GET [/api-docs], produces [application/json]}: openapiJson(HttpServletRequest,String,Locale)
+[24-05-29 17:50:41] [39m[DEBUG][0;39m [36m[Mappings:295][0;39m 
+	o.s.w.u.SwaggerWelcomeWebMvc:
+	{GET [/swagger-ui.html]}: redirectToUi(HttpServletRequest)
+[24-05-29 17:50:41] [39m[DEBUG][0;39m [36m[Mappings:295][0;39m 
+	o.s.w.u.SwaggerConfigResource:
+	{GET [/api-docs/swagger-config], produces [application/json]}: openapiJson(HttpServletRequest)
+[24-05-29 17:50:41] [39m[DEBUG][0;39m [36m[Mappings:86][0;39m 'beanNameHandlerMapping' {}
+[24-05-29 17:50:41] [39m[DEBUG][0;39m [36m[Mappings:177][0;39m 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]], /swagger-ui*/**=ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]}
+[24-05-29 17:50:42] [34m[INFO ][0;39m [36m[DefaultSecurityFilterChain:55][0;39m Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@23b02f37, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@73cdf5f9, org.springframework.security.web.context.SecurityContextPersistenceFilter@39d44217, org.springframework.security.web.header.HeaderWriterFilter@510d4d4b, org.springframework.security.web.authentication.logout.LogoutFilter@69eb1f23, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@79fbcef4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3d00c2ae, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7d619bcb, org.springframework.security.web.session.SessionManagementFilter@10b36d8a, org.springframework.security.web.access.ExceptionTranslationFilter@1ae37be2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5a35efac]
+[24-05-29 17:50:42] [34m[INFO ][0;39m [36m[EndpointLinksResolver:58][0;39m Exposing 1 endpoint(s) beneath base path '/actuator'
+[24-05-29 17:50:42] [34m[INFO ][0;39m [36m[Http11NioProtocol:173][0;39m Starting ProtocolHandler ["http-nio-8088"]
+[24-05-29 17:50:42] [34m[INFO ][0;39m [36m[TomcatWebServer:220][0;39m Tomcat started on port(s): 8088 (http) with context path ''
+[24-05-29 17:50:42] [34m[INFO ][0;39m [36m[AuthServiceApplication:61][0;39m Started AuthServiceApplication in 8.087 seconds (JVM running for 8.833)
+[24-05-29 17:50:42] [34m[INFO ][0;39m [36m[[/]:173][0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+[24-05-29 17:50:42] [34m[INFO ][0;39m [36m[DispatcherServlet:525][0;39m Initializing Servlet 'dispatcherServlet'
+[24-05-29 17:50:42] [34m[INFO ][0;39m [36m[DispatcherServlet:547][0;39m Completed initialization in 1 ms
+[24-05-29 17:51:09] [39m[DEBUG][0;39m [36m[HikariPool:421][0;39m HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[24-05-29 17:51:09] [39m[DEBUG][0;39m [36m[HikariPool:518][0;39m HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[24-05-29 17:51:39] [39m[DEBUG][0;39m [36m[HikariPool:421][0;39m HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[24-05-29 17:51:39] [39m[DEBUG][0;39m [36m[HikariPool:518][0;39m HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[24-05-29 17:51:48] [34m[INFO ][0;39m [36m[LocalContainerEntityManagerFactoryBean:651][0;39m Closing JPA EntityManagerFactory for persistence unit 'default'
+[24-05-29 17:51:48] [39m[DEBUG][0;39m [36m[SessionFactoryImpl:821][0;39m HHH000031: Closing
+[24-05-29 17:51:48] [39m[DEBUG][0;39m [36m[TypeConfiguration$Scope:345][0;39m Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@b814378] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@4e14d520]
+[24-05-29 17:51:48] [39m[DEBUG][0;39m [36m[AbstractServiceRegistryImpl:428][0;39m Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
+[24-05-29 17:51:48] [39m[DEBUG][0;39m [36m[BootstrapServiceRegistryImpl:295][0;39m Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
+[24-05-29 17:51:48] [34m[INFO ][0;39m [36m[HikariDataSource:350][0;39m HikariPool-1 - Shutdown initiated...
+[24-05-29 17:51:48] [39m[DEBUG][0;39m [36m[HikariPool:421][0;39m HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+[24-05-29 17:51:48] [39m[DEBUG][0;39m [36m[PoolBase:134][0;39m HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@32e7b78d: (connection evicted)
+[24-05-29 17:51:48] [39m[DEBUG][0;39m [36m[PoolBase:134][0;39m HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@7b5339bd: (connection evicted)
+[24-05-29 17:51:48] [39m[DEBUG][0;39m [36m[PoolBase:134][0;39m HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@2afca87e: (connection evicted)
+[24-05-29 17:51:48] [39m[DEBUG][0;39m [36m[PoolBase:134][0;39m HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@2bd81acc: (connection evicted)
+[24-05-29 17:51:48] [39m[DEBUG][0;39m [36m[PoolBase:134][0;39m HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@2eb2f633: (connection evicted)
+[24-05-29 17:51:48] [39m[DEBUG][0;39m [36m[PoolBase:134][0;39m HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@2e7cb398: (connection evicted)
+[24-05-29 17:51:48] [39m[DEBUG][0;39m [36m[PoolBase:134][0;39m HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@661c8eb6: (connection evicted)
+[24-05-29 17:51:48] [39m[DEBUG][0;39m [36m[PoolBase:134][0;39m HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@4cbce28c: (connection evicted)
+[24-05-29 17:51:48] [39m[DEBUG][0;39m [36m[PoolBase:134][0;39m HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@5bf2129e: (connection evicted)
+[24-05-29 17:51:48] [39m[DEBUG][0;39m [36m[PoolBase:134][0;39m HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@3b3db6a: (connection evicted)
+[24-05-29 17:51:48] [39m[DEBUG][0;39m [36m[HikariPool:421][0;39m HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+[24-05-29 17:51:48] [34m[INFO ][0;39m [36m[HikariDataSource:352][0;39m HikariPool-1 - Shutdown completed.
